@@ -17,11 +17,13 @@ public class WildcardExtendsGeneric {
 //        apples.add(new Fruit());
 //        apples.add(new GreenApple())
 //        apples.add(new Apple());
+
+//        apples.addAll(new ArrayList<Apple>());
+//        可以添加null
         apples.add(null);
-
-
+        System.out.println(apples.size());
 
         // 只能获取，且获取的实例默认类型为父类
-        Apple fruit = apples.get(0);
+        Apple apple = apples.get(0);
     }
 }
