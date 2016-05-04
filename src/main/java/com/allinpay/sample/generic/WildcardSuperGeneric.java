@@ -20,7 +20,7 @@ public class WildcardSuperGeneric {
         List<GreenApple> greenApples = new ArrayList<GreenApple>();
 //        apples = greenApples;
 
-        //只能addApple及Apple的之类
+        //只能添加Apple及Apple的之类，因为?是Apple的父类，则也是Apple的之类的父类
         apples.add(new Apple());
         apples.add(new GreenApple());
 //        apples.add(new Object());
